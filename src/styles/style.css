@@ -1,6 +1,45 @@
+:root{
+    --effect-color: #00AEEF;
+    --bg-color: #021431;
+    --text-color: #FFFFFF;
+}
+
 /*Reset*/
-body {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__logo img{
+    width: 100%;
 }
