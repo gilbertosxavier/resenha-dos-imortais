@@ -11,120 +11,180 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./src/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/styles/style.css">
     <title>Resenha dos Imortais</title>
 </head>
 
 <body>
-    <header>
+    <div class="bg-home">
+        <header>
+            <nav class="container navbar">
+                <div class="navbar__icons">
+                    <a href="https://instagram.com/resenhadosimortais" target="_blank">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@ResenhaDosImortais" target="_blank">
+                        <i class="fa-brands fa-youtube fa-2x"></i>
+                    </a>
+                    <a href="https://open.spotify.com/show/1L6pjszga0krXad60H2j4o" target="_blank">
+                        <i class="fa-brands fa-spotify fa-2x"></i>
+                    </a>
+                </div>
 
-        <nav class="container header-content">
-            <div class="container__icons">
-                <a href="instagram.com/resenhadosimortais" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="www.youtube.com/@ResenhaDosImortais" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://open.spotify.com/show/1L6pjszga0krXad60H2j4o" target="_blank"><i
-                        class="fa-brands fa-spotify"></i></a>
-            </div>
+                <img class="navbar__logo" src="./src/images/logo.svg" alt="Logo Resenha">
+
+                <a class="navbar__contact" href="#">
+                    Contato
+                </a>
+
+            </nav>
 
 
-            <div class="container__logo">
-                <img src="./src/images/logo.png" alt="Logo Resenha">
-            </div>
-
-            <div class="container__navbar">
-                <ul>
-                    <li>Episódios</li>
-                    <li>Sobre</li>
-                    <li>Contato</li>
-                </ul>
-            </div>
-        </nav>
-
-    </header>
+        </header>
+        <h1>Corneta, humor e pouca informação!</h1>
+    </div>
     <main class="container">
-        <section class="episode">
-            <h1>Último episódio...</h1>
+        <section class="hero">
+            <div class="hero__about">
+                <h2>Sobre o Resenha</h2>
+                <p> 
+                    Resenha dos Imortais é um podcast cheio de opiniões equivocadas, palpites errados, piadas sem graça
+                    e
+                    muita resenha! <br>
+                    Somos um grupo de torcedores e discutimos sobre tudo que envolve o Grêmio
+                    desde histórias de bastidores até entrevistas exclusivas com ex-jogadores, árbitros, jornalistas,
+                    influenciadores e peronalidades identificados com o Tricolor! Obviamente sempre recebemos todos com
+                    uma boa resenha e algumas doses de trago.
 
+                </p>
+            </div>
+            <div class="hero__episode">
+                <h3>Último episódio...</h3>
+
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PLcquAYq8QBY5RhMYyzbwy1-sXQ6EEnxp0"
+                    frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
 
         </section>
     </main>
 
-    <section class="about">
-        <div>
-            <h2>Sobre o Resenha</h2>
-            <p>
-                Resenha dos Imortais é um podcast cheio de opiniões equivocadas, palpites errados, piadas sem graça e
-                muita resenha! 🎙️
-                🔵⚪⚫ Grêmio, futebol e muita resenha ⚽
-                No Resenha dos Imortais, discutimos tudo sobre o Grêmio, futebol em geral e muito mais. Desde histórias
-                de bastidores até entrevistas exclusivas com ex-jogadores, árbitros, jornalistas e influenciadores,
-                sempre com uma boa dose de resenha e, claro, algumas boas doses de trago.
+    <section class="members container">
 
+        <h2>Conheça nossos Integrantes:</h2>
+        <div class="cards">
 
-            </p>
+            <div class="cards__content">
+                <a href="https://www.instagram.com/chriistopherp?igsh=MXd6eW9jMmJ6Y3gxdQ==" target="_blank">
+                    <img 
+                    src="./src/images/christopher.jpg" alt="Christopher">
+                </a>
+                <div>
+                    <h3>Christopher Pottes</h3>
+                    <p>
+                        Idade: 32 anos <br>
+                        Maior ídolo: Renato Portaluppi <br>
+                        Jogo marcante: <br> 
+                        Final Copa do Brasil 2016 <br>
+                        Grêmio 1 x 1 Atlético Mineiro
+                    </p>
+                </div>
+            </div>
+
+            <div class="cards__content">
+                <div class="img">
+                    <a href="https://www.instagram.com/danieljaekel?igsh=NGxsd2thcm0wdnFq" target="_blank">
+                        <img 
+                        src="./src/images/daniel.jpg" 
+                        alt="Daniel">
+                    </a>
+                </div>
+                <div>
+                    <h3>Daniel Jaekel</h3>
+                    <p>
+                        Idade: 32 anos <br>
+                        Maior ídolo: Renato Portaluppi <br>
+                        Jogo marcante: <br> 
+                        Final Copa do Brasil 2016 <br>
+                        Grêmio 1 x 1 Atlético Mineiro
+                    </p>
+                </div>
+            </div>
+
+            <div class="cards__content">
+                <a href="https://www.instagram.com/ogilbertosx?igsh=ajRreGxibjlwbWpi" target="_blank">
+                    <img 
+                    src="./src/images/gilberto.jpg" 
+                    alt="Gilberto">
+                </a>
+                <div>
+                    <h3>Gilberto Xavier</h3>
+                    <p>
+                        Idade: 32 anos <br>
+                        Maior ídolo: Renato Portaluppi <br>
+                        Jogo marcante: <br> 
+                        Final Copa do Brasil 2016 <br>
+                        Grêmio 1 x 1 Atlético Mineiro
+                    </p>
+                </div>
+            </div>
+
+            <div class="cards__content">
+                <a href="https://www.instagram.com/lelogreco?igsh=NTZzZ2k4ajBhamRz" target="_blank">
+                    <img 
+                    src="./src/images/lelo.jpg" 
+                    alt="Lelo">
+                </a>
+                <div>
+                    <h3>Lelo Greco</h3>
+                    <p>
+                        Idade: 34 anos <br>
+                        Maior ídolo: Renato Portaluppi <br>
+                        Jogo marcante: <br> 
+                        Final Libertadores 2017 <br>
+                        Grêmio 1 x 0 Lanús
+                    </p>
+                </div>
+            </div>
+
+            <div class="cards__content">
+                <a href="https://www.instagram.com/leon_amaral?igsh=MWZodXo0b3h4emtxZw==" target="_blank">
+                    <img 
+                    src="./src/images/leon.jpg" 
+                    alt="Leon">
+                </a>
+                <div>
+                    <h3>Leon Amaral</h3>
+                    <p>
+                        Idade: 36 anos <br>
+                        Maior ídolo: Danrlei <br>
+                        Jogo marcante: <br> 
+                        Final Campeonato Brasileiro 1996 <br>
+                        Grêmio 2 x 1 Portuguesa
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <h2>Conheça nossos Integrantes:</h2>
-
-            <div class="card">
-                <img src=" " alt="">
-                <h3>Christopher Pottes</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat doloribus blanditiis suscipit illum
-                    dolorem repellat impedit provident vero perspiciatis eveniet! Dignissimos iste excepturi sint fuga!
-                    Distinctio iste quae eum deserunt.</p>
-            </div>
-
-            <div class="card">
-                <img src=" " alt="">
-                <h3>Daniel Jaekel</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, fugiat necessitatibus veniam
-                    quibusdam magni consequuntur dolorum voluptatum ratione dolor deleniti voluptates. Eveniet aut
-                    possimus maiores? Inventore sed commodi autem excepturi.</p>
-            </div>
-
-            <div class="card">
-                <img src=" " alt="">
-                <h3>Gilberto Xavier</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid deserunt eos eum dignissimos,
-                    veniam, ullam quam quo recusandae dolorem in sed a. Eligendi at alias optio esse, eveniet nulla.</p>
-            </div>
-
-            <div class="card">
-                <img src=" " alt="">
-                <h3>Lelo Greco</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid deserunt eos eum dignissimos,
-                    veniam, ullam quam quo recusandae dolorem in sed a. Eligendi at alias optio esse, eveniet nulla.</p>
-            </div>
-
-            <div class="card">
-                <img src=" " alt="">
-                <h3>Leon Amaral</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid deserunt eos eum dignissimos,
-                    veniam, ullam quam quo recusandae dolorem in sed a. Eligendi at alias optio esse, eveniet nulla.</p>
-            </div>
-        </div>
-
-        <div class="contact">
-            <form>
-                <input type="text" placeholder="Seu Nome" required>
-                <input type="email" placeholder="Seu Email" required>
-                <textarea placeholder="Sua Mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-
-        </div>
     </section>
 
     <footer>
         <div>
-            <a href="instagram.com/resenhadosimortais" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="www.youtube.com/@ResenhaDosImortais" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://open.spotify.com/show/1L6pjszga0krXad60H2j4o" target="_blank"><i
-                    class="fa-brands fa-spotify"></i></a>
+            <a href="instagram.com/resenhadosimortais" target="_blank">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="www.youtube.com/@ResenhaDosImortais" target="_blank">
+                <i class="fa-brands fa-youtube fa-2x"></i>
+            </a>
+            <a href="https://open.spotify.com/show/1L6pjszga0krXad60H2j4o" target="_blank">
+                <i class="fa-brands fa-spotify fa-2x"></i>
+            </a>
         </div>
         <div>
-            <img src="./src/images/logo.png" alt="Logo Resenha">
+            <img src="./src/images/logo.svg" alt="Logo Resenha">
         </div>
         <p>Copyright 2025 | Resenha dos Imortais - Todos os direitos reservados.</p>
     </footer>
