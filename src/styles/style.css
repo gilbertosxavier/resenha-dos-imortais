@@ -19,16 +19,13 @@ body{
     height: 100vh;
     position: relative;
 }
+
  i {
     color: var(--text-color);
  }
+
 header{
     width: 100%;
-}
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 10px;
 }
 
 .bg-home {
@@ -45,7 +42,6 @@ header{
     z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
-
     opacity: .4;
 }
 
@@ -53,6 +49,14 @@ header{
     font-size: 60px;
     text-align: center;
 }
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* HEADER */
 
 .navbar {
     display: flex;
@@ -64,6 +68,7 @@ header{
 
 .navigation {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     width: 100%;
@@ -81,9 +86,9 @@ header{
     gap: 14px;
 }
 
-.navbar__icons i:hover {
+i:hover {
     color: var(--effect-color);
-    animation: translateY 0.8s infinite alternate;
+    animation: translateY 0.6s infinite alternate;
 }
 
 @keyframes translateY {
@@ -101,10 +106,10 @@ header{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px;
 }
 
-.navbar__btn{
+.btn--all{
     border: 1px solid var(--text-color);
     padding: 8px 24px;
     margin-top: 20px;
@@ -115,11 +120,12 @@ header{
     transition: .8s;
 }
 
-.navbar__btn:hover {
+.btn--all:hover {
     border: 1px solid var(--effect-color);
     background-color: var(--effect-color);
 }
 
+/* MAIN */
 
 .hero {
     display: flex;
@@ -127,7 +133,7 @@ header{
     justify-content: space-between;
     gap: 30px;
     width: 100%;
-    padding: 150px 20px;
+    padding: 100px 20px;
 
 }
 .hero__about {
@@ -158,10 +164,18 @@ header{
     font-size: 26px;
     padding-bottom: 20px;
 }
-
+.members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 130px 20px;
+}
 .members h2 {
     font-size: 30px;
     padding: 20px 0;
+    text-align: center;
 }
 
 .cards {
@@ -207,7 +221,17 @@ header{
 
 }
 
-/*apoiadores*/
+/*SPONSOR*/
+.sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+    padding: 100px 20px;
+    }
+
 .sponsors {
     display: flex;
     flex-direction: column;
@@ -218,20 +242,29 @@ header{
 
 .sponsor__content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 20px;
 }
 
-.sponsors h2 {
-    padding: 30px 0;
-
-}
-.sponsors img {
+.sponsor__content--sponsors img {
     max-width: 100px;
 }
 
+.sponsor__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sponsor__contact p {
+    font-size: 20px;
+}
+
+
+/* FOOTER */
 
 footer {
     display: flex;
@@ -253,10 +286,6 @@ footer img{
     gap: 10px;
 }
 
-.footer__icons i:hover {
-    color: var(--effect-color);
-    animation: translateY 0.8s infinite alternate;
-}
 
 .credits {
     font-size: .8em;
