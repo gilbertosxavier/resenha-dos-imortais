@@ -45,9 +45,10 @@ header{
     opacity: .4;
 }
 
-.bg-home h1 {
+.container h1 {
     font-size: 60px;
     text-align: center;
+    margin-top: 50px;
 }
 
 .container {
@@ -100,14 +101,6 @@ i:hover {
     }
 }
 
-.navbar__contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px;
-}
 
 .btn--all{
     border: 1px solid var(--text-color);
@@ -198,6 +191,7 @@ i:hover {
 }
 
 .cards__content img {
+    background-color: #000000;
     width: 100%;
     max-width: 200px;
     object-fit: cover;
