@@ -42,7 +42,7 @@ header{
     z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: .4;
+    opacity: .13;
 }
 
 .container h1 {
@@ -133,9 +133,10 @@ i:hover {
     height: 100%;
    
 }
-.hero__about h2{
+.hero__about h3{
     font-size: 36px;
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .hero__about p {
@@ -156,6 +157,7 @@ i:hover {
 .hero__episode h3 {
     font-size: 26px;
     padding-bottom: 20px;
+    text-align: end;
 }
 .members {
     display: flex;
@@ -242,6 +244,11 @@ i:hover {
     gap: 20px;
 }
 
+.sponsor__content h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
 .sponsor__content--sponsors img {
     max-width: 100px;
 }
@@ -284,6 +291,7 @@ footer img{
 .credits {
     font-size: .8em;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .credits a {
@@ -292,15 +300,16 @@ footer img{
     font-size: .8rem;
 }
 
-
-
 /*media querie*/
 
+@media screen and (max-width: 1300px){
+    .bg-home h1 {
+        font-size: 46px ;
+    }
+}
 
 @media screen and (max-width: 1190px) {
-    .bg-home h1 {
-        font-size: 46px;
-    }
+
     .hero {
         flex-direction: column;
     }
@@ -310,29 +319,27 @@ footer img{
     }
 }
 
-@media screen and (max-width: 980px) {
-
-    .navbar__contact{
-        display: none;
+@media screen and (max-width: 768px) {
+    .bg-home h1 {
+        font-size: 34px;
     }
 
-    .navigation {
-        flex-direction: column;
-    }
-
-    .hero {
-        padding-top: 20px;
-    }
-
-    .hero__about h2{
+    .hero__about h2 {
         font-size: 30px;
+    }
+
+    .hero__about p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    iframe{
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    iframe{
-        width: 400px;
-    }
+
 
     footer p {
         font-size: 12px;
@@ -343,9 +350,43 @@ footer img{
     line-height: 1.6;
 }
 
-    .sponsors h2 {
+.sponsors h2 {
         font-size: 21px;
         text-align: center;
         padding: 30px 0;
+    }
+}
+
+
+
+@media  screen and (max-width: 400px) {
+    
+    .navbar__icons i, .footer__icons i {
+        font-size: 28px;
+    }
+
+    .navbar__logo, .footer__icons img  {
+        max-width: 100px;
+    }
+
+    .bg-home h1, .members h2, .sponsor__content h2  {
+        font-size: 22px;
+    }
+
+    .hero {
+        padding: 60px 10px;
+    }
+
+    .hero__about h3, .hero__episode h3 {
+        font-size: 20px;
+    }
+
+    .hero__about p {
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .credits span, .credits a {
+        font-size: 10px;
     }
 }
