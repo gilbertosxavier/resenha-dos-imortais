@@ -249,6 +249,14 @@ i:hover {
     text-align: center;
 }
 
+.sponsor__content--sponsors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 .sponsor__content--sponsors img {
     max-width: 100px;
 }

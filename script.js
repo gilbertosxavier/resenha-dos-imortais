@@ -43,8 +43,61 @@ const members = [
     }
 ];
 
-const cards = document.querySelector('.cards');
+const sponsors = [
+    {
+        name: "Morales",
+        img: "./src/images/sponsor/morales.jpg",
+        insta: "https://www.instagram.com/moralescasadecarnes/"
+    },
+    {
+        name: "Paradouro Cristal",
+        img: "./src/images/sponsor/cristal.jpg",
+        insta: "https://paradourocristal.com.br/"
+    },
+    {
+        name: "Restaurante Leão",
+        img: "./src/images/sponsor/leao.jpg",
+        insta: "https://restauranteleao.com.br/"
+    },
+    {
+        name: "ZOZ Cervejaria",
+        img: "./src/images/sponsor/zoz.jpg",
+        insta: "https://www.instagram.com/zozcervejaria/"
+    },
+    {
+        name: "Barbearia 20 de Julho",
+        img: "./src/images/sponsor/20dejulho.jpg",
+        insta: "https://www.instagram.com/barbearia.20dejulho/"
+    },
+    {
+        name: "Portella Negócios Imobiliários",
+        img: "./src/images/sponsor/portella.jpg",
+        insta: "https://www.portellaimob.com.br/"
+    },
+    {
+        name: "Fábrica de Massas do João",
+        img: "./src/images/sponsor/joao.jpg",
+        insta: "https://www.instagram.com/joaodasmassas1/"
+    },
+    {
+        name: "3D' Ouro",
+        img: "./src/images/sponsor/3douro.jpg",
+        insta: "https://www.instagram.com/3douro/"
+    },
+    {
+        name: "Pastel Chefe",
+        img: "./src/images/sponsor/pastelchefe.jpg",
+        insta: "https://www.instagram.com/pastelchefee"
+    },
+    {
+        name: "RS Personalizados",
+        img: "./src/images/sponsor/rspersonalizados.jpg",
+        insta: "https://www.instagram.com/_rspersonalizados_"
+    }
+];
 
+const cards = document.querySelector('.cards');
+const sponsor = document.querySelector('.sponsor__content--sponsors')
 
 function createCard() {
 
@@ -88,3 +141,33 @@ function createCard() {
 }
 
 createCard();
+
+
+{/* <a href="https://www.instagram.com/moralescasadecarnes/" target="_blank">
+    <img data-aos="zoom-in" 
+    src="./src/images/sponsor/morales.jpg" 
+    alt="Morales Casa de Carnes">
+</a> */}
+
+
+
+function createSponsor() {
+
+    sponsors.forEach((item) => {
+
+        console.log(item);
+        const linkElement = document.createElement('a');
+        linkElement.href = item.insta;
+        linkElement.target = "_blank";
+
+        const imgElement = document.createElement('img')
+        imgElement.src = item.img;
+        imgElement.alt = item.name;
+
+
+        linkElement.appendChild(imgElement);
+        sponsor.appendChild(linkElement);
+    })
+};
+
+createSponsor()
