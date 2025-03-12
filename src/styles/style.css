@@ -259,7 +259,13 @@ i:hover {
 
 .sponsor__content--sponsors img {
     max-width: 100px;
+    transition: transform 0.4s ;
 }
+
+.sponsor__content--sponsors img:hover{
+    transform: scale(1.1);
+}
+
 
 .sponsor__contact {
     display: flex;
